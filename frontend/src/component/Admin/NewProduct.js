@@ -30,6 +30,7 @@ const NewProduct = ({ history }) => {
 
   const categories = [
     "SmartPhones",
+    "Ipad",
     "Laptop",
     "Camera",
     "Phụ Kiện",

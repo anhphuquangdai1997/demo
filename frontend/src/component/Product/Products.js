@@ -14,6 +14,7 @@ import Logo from '../../images/logo.png'
 
 const categories = [
   "SmartPhones",
+  "Ipad",
   "Laptop",
   "Camera",
   "Phụ Kiện",
