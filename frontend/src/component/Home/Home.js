@@ -8,6 +8,7 @@ import { useSelector, useDispatch } from "react-redux";
 import Loader from "../layout/Loader/Loader";
 import { useAlert } from "react-alert";
 import Slides from "./HotItems/Slides";
+import Hotfrend from "./Hotfrend/Hotfrend";
 
 
 
@@ -65,6 +66,11 @@ const Home = () => {
                 <ProductCard key={product._id} product={product} />
               ))}
           </div>
+          <div className="homehotpage">
+            <h4>Xu Hướng Tìm Kiếm</h4>
+            <Hotfrend />
+          </div>
+          <h4 className="homeHeading">Bài Viết Liên Quan</h4>
         </Fragment>
       )}
     </Fragment>

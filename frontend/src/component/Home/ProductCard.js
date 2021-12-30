@@ -18,6 +18,7 @@ const ProductCard = ({ product }) => {
           {" "}
           ({product.numOfReviews} Reviews)
         </span>
+
       </div>
       <span className="price">{`$${product.price}`}</span>
       <span><b className={product.Stock < 1 ? "redColor" : "greenColor"}>

@@ -28,7 +28,6 @@ import Logo from '../../images/logo.png';
 
 
 
-
 const ProductDetails = ({ match, history }) => {
   const dispatch = useDispatch();
   const alert = useAlert();
@@ -87,6 +86,7 @@ const ProductDetails = ({ match, history }) => {
       history.push("/products");
     }
   };
+
 
   const addToCartHandler = () => {
     dispatch(addItemsToCart(match.params.id, quantity));
@@ -219,18 +219,14 @@ const ProductDetails = ({ match, history }) => {
 
           {/* sản phẩm gởi ý */}
           <div className="relatedproduct">
-            <h4>GỢI Ý SẢN PHẨM</h4>
+            <h4>SẢN PHẨM LIÊN QUAN</h4>
             <div className="productsss">
-
-
               {
                 products.map(productt => {
                   return productt.category === product.category
-                    ? <ProductCard key={productt._id} product={productt} /> : null
+                    ? <Carousel><ProductCard key={productt._id} product={productt} /></Carousel> : null
                 })}
-
             </div>
-
           </div>
           {/* end sản phẩm gởi ý */}
           <h3 className="reviewsHeading">REVIEWS</h3>

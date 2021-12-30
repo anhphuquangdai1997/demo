@@ -1,0 +1,7 @@
+.img-card{
+    box-shadow: 5px 10px 8px 10px #888888;
+    border-radius: 10px;
+}
+.card-title{
+    color: rgb(167, 25, 25);
+}

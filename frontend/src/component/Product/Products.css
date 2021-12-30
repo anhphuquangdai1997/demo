@@ -13,7 +13,7 @@
   width: 85vw;
   font: 500 1.5vmax "Roboto";
   text-align: center;
-  position: fixed;
+  position: relative;
   display: block;
   background-color: rgb(248, 245, 245);
   margin-left: 15%;
@@ -94,6 +94,15 @@ Link{
   display: flex;
   justify-content: center;
   margin: 6vmax;
+  
+}
+.danhmuc{
+  text-align: center;
+  padding: 5px 0;
+  letter-spacing: 2px;
+  color:rgb(240, 13, 13);
+  font-weight: bold;
+
 }
 
 .pagination {
@@ -153,20 +162,27 @@ Link{
 
 .categoryBox {
   padding: 0%;
+  background-color: #F7F7F7;
+  border-radius: 5px;
+  
+  
 }
 
 .category-link {
   list-style: none;
-  color: rgba(0, 0, 0, 0.61);
+  color: black;
   font: 400 0.8vmax "Roboto";
-  margin: 0.4vmax;
-  font-size: 20px;
+  
+  font-size: 17px;
   cursor: pointer;
   transition: all 0.5s;
+  border: 1px solid #F7F7F7;
+  padding: 5px 5px;
 }
 .category-link:hover {
   color: tomato;
   border-bottom: 1px solid gray;
+  font-size: 19px;
 }
 
 .filterBox > fieldset {

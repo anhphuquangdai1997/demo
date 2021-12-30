@@ -126,7 +126,7 @@ const Products = ({ match, history }) => {
               max={10000}
             />
 
-            <Typography>Categories</Typography>
+            <Typography className="danhmuc">DANH MỤC</Typography>
             <ul className="categoryBox">
 
               {categories.map((category) => (
